@@ -1,0 +1,130 @@
+.show-on-hover {
+    z-index: 2;
+}
+
+.step-5 .step-input,
+.step-input:focus {
+    max-width: 720px;
+}
+
+.step-3 .center-container {
+    position: relative;
+    top: auto;
+    transform: none;
+    max-height: calc(100vh - 175px);
+    overflow: hidden auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.step-3 .step-label {
+    margin-bottom: 30px;
+}
+
+.step-3 .max-900px {
+    max-width: 900px;
+}
+
+@media only screen and (min-width: 1600px) {
+    .step-2 .step-imgs img {
+        max-width: 84px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .step-7 .center-container {
+        position: relative;
+        top: auto;
+        transform: none;
+        max-height: calc(100vh - 60px);
+        overflow: auto;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header-default .header__wrapper .header-flex-right {
+        display: none;
+    }
+
+    .step-7 .center-container {
+        max-height: calc(100vh - 60px);
+    }
+
+    .step-7 .single-final {
+        margin-bottom: 15px;
+    }
+
+    .step-footer {
+        box-shadow: 0px -10px 30px -13px rgba(0, 0, 0, .3);
+    }
+
+    .step-wrapper.step-1 .step-footer {
+        background: #522395;
+    }
+
+    .step-wrapper.step-2 .step-footer {
+        background: #8a13a1;
+    }
+
+    .step-wrapper.step-3 .step-footer {
+        background: #f15874;
+    }
+
+    .step-wrapper.step-4 .step-footer {
+        background: #6e28ac;
+    }
+
+    .step-wrapper.step-5 .step-footer {
+        background: #077246;
+    }
+
+    .step-wrapper.step-6 .step-footer {
+        background: #522395;
+    }
+
+    h1.heading-h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    h1.heading-h3 br {
+        display: none;
+    }
+
+    h6.heading-h6 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .step-submit,
+    .step-submit:focus {
+        padding: 9px 40px;
+        font-size: 16px;
+        font-weight: 400;
+        border: 2px solid #fff;
+    }
+
+    .logo {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .show-on-hover {
+        display: none !important;
+    }
+
+    .step-3 .center-container {
+        max-height: calc(100vh - 160px);
+    }
+
+    .step-3 .step-label h3 {
+        font-size: 18px;
+    }
+
+    .step-label {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,43 @@
+<div id="wrapper" class="wrapper">
+    <div class="step-wrapper step-3"> <img src="https://www.logura.com/assets/img/steps/step-1/1.png"
+            class="top-left-img"> <img src="https://www.logura.com/assets/img/steps/step-3/down.png"
+            class="bottom-left-img"> <img src="https://www.logura.com/assets/img/steps/step-3/up.png"
+            class="top-right-img"> <img src="https://www.logura.com/assets/img/steps/step-1/4.png"
+            class="bottom-right-img">
+        <div class="step-top-sec">
+            <form>
+                <div class="center-container">
+                    <div class="container">
+                        <div class="steps-heading">
+                            <h1 class="heading heading-h3 text-white">Choose Your Logo Design <br>Type & Preference
+                            </h1>
+                        </div>
+                        <div class="step-options max-900px">
+                            <div class="row">
+                                <div class="col-md-4 col-12" *ngFor="let preference of logoPreference"> 
+                                    <input type="checkbox" name="logostyle[]"
+                                        class="step-checkbox"value={{preference.title}} [id]="preference.id" (click)="getLogoStyle(preference.id)"> 
+                                        <label class="step-label" [for]="preference.id">
+                                        <div class="step-imgs step-hover"> 
+                                            <img [src]="preference.image">
+                                            <div class="show-on-hover">
+                                                <h5>Business Initials & Lettermark</h5>
+                                                <p>Logos representing your business via your business name letter Or
+                                                    initials instead of using symbol</p>
+                                            </div>
+                                        </div>
+                                        <h3 class="step-heading">{{ preference.title }}</h3>
+                                    </label> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-footer">
+                        <button class="step-submit" (click)="submitSlogan()"> Next >> </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!--// Page Conttent -->
+</div>

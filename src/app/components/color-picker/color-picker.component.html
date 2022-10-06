@@ -1,0 +1,37 @@
+<div id="wrapper" class="wrapper">
+    <div class="step-wrapper step-4"> <img src="https://www.logura.com/assets/img/steps/step-1/1.png"
+            class="top-left-img"> <img src="https://www.logura.com/assets/img/steps/step-4/bt1.png"
+            class="bottom-left-img"> <img src="https://www.logura.com/assets/img/steps/step-4/tp1.png"
+            class="top-right-img"> <img src="https://www.logura.com/assets/img/steps/step-1/4.png"
+            class="bottom-right-img">
+        <div class="step-top-sec">
+            <form action="https://www.logura.com/brief/logo_style" method="get">
+                <div class="center-container">
+                    <div class="container">
+                        <div class="steps-heading">
+                            <h1 class="heading heading-h3 text-white">The Color Tone Of Your Logo</h1>
+                        </div>
+                        <div class="step-options">
+                            <div class="row justify-content-center">
+                                <div class="col-md-2 col-6" *ngFor="let color of colors"> 
+                                    <input type="checkbox" name="color[]"
+                                        class="step-checkbox" value={{color.title}} [id]="color.id" (click)="getColor(color.id)"> 
+                                        <label class="step-label" [for]="color.id">
+                                        <div class="step-imgs">
+                                            <img [src]="color.image">
+                                        </div>
+                                        <h3 class="step-heading">{{color.title}}</h3>
+                                    </label> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-footer"> 
+                        <button class="step-submit" (click)="submitSlogan()"> Next >> </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!--// Page Conttent -->
+</div>

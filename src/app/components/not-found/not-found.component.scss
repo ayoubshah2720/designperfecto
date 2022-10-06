@@ -1,0 +1,24 @@
+h1.display-1 {
+    font-size: 386px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.notfoundhr {
+    border-top: 1px dashed rgba(255, 255, 255, .2);
+    width: 100%;
+}
+
+.notfoundh3>span {
+    font-size: 38px;
+}
+
+@media (max-width: 576px) {
+    h1.display-1 {
+        font-size: 150px;
+    }
+
+    .onmobilesec {
+        padding: 115px 0px;
+    }
+}

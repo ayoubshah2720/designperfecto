@@ -1,0 +1,41 @@
+<div id="wrapper" class="wrapper">
+    <div class="step-wrapper step-5"> <img src="https://www.logura.com/assets/img/steps/step-1/1.png"
+            class="top-left-img"> <img src="https://www.logura.com/assets/img/steps/step-5/down.png"
+            class="bottom-left-img"> <img src="https://www.logura.com/assets/img/steps/step-5/up.png"
+            class="top-right-img"> <img src="https://www.logura.com/assets/img/steps/step-1/4.png"
+            class="bottom-right-img">
+        <div class="step-top-sec">
+            <form [formGroup]="userForm">
+                <div class="center-container">
+                    <div class="container">
+                        <div class="steps-heading">
+                            <h1 class="heading heading-h3 text-white">Finally You Made It! :)</h1>
+                            <h6 class="heading heading-h6 text-white letter-spacing-1">Now Please Complete This Step
+                                To Process Your Logo Design Request</h6>
+                        </div>
+                        <div class="step-options">
+                            <div class="row">
+                                <div class="col-12"> <input type="text" formControlName="cus_name" class="step-input cus_name"
+                                        placeholder="Please Enter Your Name" required> </div>
+                                <div class="col-12"> <input type="email" formControlName="cus_email"
+                                        class="step-input cus_email" placeholder="Please Enter Your Email" required>
+                                </div>
+                                <div id="popupnum" class="col-12"> <input type="text" name="cus_phone"
+                                        placeholder="Please Enter Your Phone Number" pattern="[0-9\s]+"
+                                        class="step-input cus_phone"> </div>
+                                <div class="enter-popup">
+                                    <p id="clickpopup" class="clickherepopup">Add Your Phone Number (Optional)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-footer">
+                     <!-- <input type="hidden" name="id" value="75392"> <input type="submit"
+                        value="Next" class="step-submit">  -->
+                    <button class="step-submit" (click)="createLogo()"> Next </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
