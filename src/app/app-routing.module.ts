@@ -8,6 +8,7 @@ import { FinalStepComponent } from './components/final-step/final-step.component
 import { IndustryComponent } from './components/industry/industry.component';
 import { LogoBrandingComponent } from './components/logo-branding/logo-branding.component';
 import { LogoStyleComponent } from './components/logo-style/logo-style.component';
+import { PaymentsComponent } from './components/payments/payments.component';
 import { PersonalInformationComponent } from './components/personal-information/personal-information.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { PricingComponent } from './components/pricing/pricing.component';
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'pricing',
     component:PricingComponent
+  },
+  {
+    path:'payments',
+    component:PaymentsComponent
   },
   {
     path:'blog',

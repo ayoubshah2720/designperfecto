@@ -24,6 +24,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TawkComponent } from './components/tawk/tawk.component';
+import { PaymentsComponent } from './components/payments/payments.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TawkComponent } from './components/tawk/tawk.component';
     PersonalInformationComponent,
     FinalStepComponent,
     BlogComponent,
-    TawkComponent
+    TawkComponent,
+    PaymentsComponent
   ],
   imports: [
     BrowserModule,
